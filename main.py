@@ -25,13 +25,13 @@ async def watch():
     access_token = os.getenv('ACCESS_TOKEN')
     refresh_token = os.getenv('REFRESH_TOKEN')
     user_id = os.getenv('USER_ID')
-    discrod_token = os.getenv("DISCORD_TOKEN")
+    discord_token = os.getenv("DISCORD_TOKEN")
 
     LATITUDE = 49.81075195446476
     LONGITUDE = 19.0938562251747
     RADIUS = 10
 
-    discord_bot = DiscordTGTGBot(discrod_token)
+    discord_bot = DiscordTGTGBot(discord_token)
 
     manager = TGTGManager(access_token, refresh_token, user_id)
 
@@ -58,3 +58,4 @@ async def main():
 
 
 asyncio.run(main())
+# register("mateusz.kisiel.mk@gmail.com")
