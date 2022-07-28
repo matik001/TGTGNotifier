@@ -134,3 +134,4 @@ class TGTGManager:
             items = get_items()
             await self._handle_new_items(items)
             await asyncio.sleep(interval)
+            print('.', end='')

@@ -5,15 +5,10 @@ import asyncio
 
 from tgtg import TgtgClient
 from dotenv import load_dotenv
-from win10toast import ToastNotifier
 
 from DiscordTGTGBot import DiscordTGTGBot
 from TGTGManager import TGTGManager, Item
 
-
-def show_msg(msg:str):
-    toaster = ToastNotifier()
-    toaster.show_toast("Too Good To Go", msg, duration=30, threaded=True)
 
 def register(email: str):
     client = TgtgClient(email="mateusz.kisiel.mk@gmail.com")
