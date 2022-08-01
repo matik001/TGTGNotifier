@@ -40,7 +40,7 @@ async def watch():
 
     async def watch():
         await discord_bot.wait_until_ready()
-        await manager.watch(latitude=LATITUDE, longitude=LONGITUDE, radius=RADIUS, interval=5)
+        await manager.watch(latitude=LATITUDE, longitude=LONGITUDE, radius=RADIUS, interval=60)
 
     await asyncio.gather(
         discord_bot.start(),
@@ -52,5 +52,5 @@ async def main():
     await watch()
 
 
-asyncio.run(main())
-# register("mateusz.kisiel.mk@gmail.com")
+# asyncio.run(main())
+register("mateusz.kisiel.mk@gmail.com")
